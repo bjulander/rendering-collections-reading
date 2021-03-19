@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.string :description
       t.integer :author_id
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
